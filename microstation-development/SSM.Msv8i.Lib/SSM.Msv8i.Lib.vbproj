@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	  <TargetFramework>net481</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>Library</OutputType>
+    <AssemblyTitle>SSM MicroStation V8i Library</AssemblyTitle>
+    <AssemblyDescription>Professional 2D/3D CAD tools and user interface library for MicroStation V8i</AssemblyDescription>
+    <AssemblyCompany>SSM Engineering</AssemblyCompany>
+    <AssemblyProduct>SSM MicroStation V8i Tools</AssemblyProduct>
+    <AssemblyCopyright>Copyright © SSM Engineering 2024</AssemblyCopyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+	</PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="MicroStationDGN">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>8</VersionMajor>
+      <Guid>cf9f97bf-39f2-4b8e-835c-8be9e99daf5b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+</Project>

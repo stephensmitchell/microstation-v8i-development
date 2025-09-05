@@ -5,7 +5,14 @@
 
 # dotenv files
 .env
-
+internal
+*internal
+./internal
+.claude
+.openai
+.grok
+.localgpt
+.ai
 # User-specific files
 *.rsuser
 *.suo
@@ -482,3 +489,4 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/microstation-development/SSM.Msv8i.Lib/docs
